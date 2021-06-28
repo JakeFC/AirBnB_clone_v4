@@ -105,3 +105,10 @@ button:hover {
 input {
     margin-right: 10px;
 }
+
+.amenities h4 {
+    height: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

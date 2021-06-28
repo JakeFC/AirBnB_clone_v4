@@ -1,18 +1,18 @@
-// updates text under amenities with all checked amenity names
-amenities = {};
+// updates text under aDict with all checked amenity names
+aDict = {};
 $('input').click(function () {
   $(':input').each(function () {
     if (this.checked == true) {
-      amenities[this.dataset.id] = this.dataset.name;
+      aDict[$(this).data('name')] = $(this).data('id');
     } else {
-      delete amenities[this.dataset.id];
+      delete aDict[$(this).data('name')];
     }
   });
   arr = [];
-  for (const key in amenities) {
-    if (amenities.hasOwnProperty(key)) {
-      arr.push(amenities[key]);
+  for (const key in aDict) {
+    if (aDict.hasOwnProperty(key)) {
+      arr.push(key);
     }
   }
-  $('.amenities h4').html(arr.join(', '));
+  $('.amenities h4').html(arr.sort().join(', '));
 });
