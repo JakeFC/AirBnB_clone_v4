@@ -154,30 +154,33 @@ JQuert version - `<script src="https://code.jquery.com/jquery-3.2.1.min.js"></sc
 
 Install flasgger
 
-'''
+```
 $ sudo apt-get install -y python3-lxml
 $ sudo pip3 install flask_cors # if it was not installed yet
 $ sudo pip3 install flasgger
 
-'''
+```
+
 jsonschema exception
 
-'''
+```
 $ sudo pip3 uninstall -y jsonschema 
 $ sudo pip3 install jsonschema==3.0.1
 
-'''
+```
 
 pathlib2
 
-'''
+```
+
 $ sudo pip3 install pathlib2
 
 '''
 
 Task1: attach cache_id to the render_template, using UUID(uuid.uuid4())
 
-'''
+```
+
 guillaume@ubuntu:~/AirBnB_v4$ curl -s -XGET http://0.0.0.0:5000/0-hbnb/ | head -6
 <!DOCTYPE HTML>
 <html lang="en">
@@ -186,7 +189,7 @@ guillaume@ubuntu:~/AirBnB_v4$ curl -s -XGET http://0.0.0.0:5000/0-hbnb/ | head -
     <link rel="stylesheet" type="text/css" href="../static/styles/4-common.css?f834413e-0aa9-4767-b64a-c92db9cb1f82" />
     <link rel="stylesheet" type="text/css" href="../static/styles/3-header.css?f834413e-0aa9-4767-b64a-c92db9cb1f82" />
 
-'''
+```
 
 Task2: adding clickavle checkboxes to amenities see file templates/1-hbnb.html
 
