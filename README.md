@@ -150,7 +150,7 @@ EOF  all  create  destroy  help  quit  show  update
 ```
 ## Web Dynamic - HTML/CSS/JavaScript
 
-JQuert version - `<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>`
+JQuery version - `<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>`
 
 Install flasgger
 
@@ -175,7 +175,7 @@ pathlib2
 
 $ sudo pip3 install pathlib2
 
-'''
+```
 
 Task1: attach cache_id to the render_template, using UUID(uuid.uuid4())
 
