@@ -28,16 +28,16 @@ This project is interpreted/tested on Ubuntu 14.04 LTS using python3 (version 3.
 * Run hbnb(non-interactively): `echo "<command>" | ./console.py`
 
 ## File Descriptions
-[console.py](console.py) - the console contains the entry point of the command interpreter. 
+[console.py](console.py) - the console contains the entry point of the command interpreter.
 List of commands this console current supports:
-* `EOF` - exits console 
+* `EOF` - exits console
 * `quit` - exits console
 * `<emptyline>` - overwrites default emptyline method and does nothing
 * `create` - Creates a new instance of`BaseModel`, saves it (to the JSON file) and prints the id
-* `destroy` - Deletes an instance based on the class name and id (save the change into the JSON file). 
+* `destroy` - Deletes an instance based on the class name and id (save the change into the JSON file).
 * `show` - Prints the string representation of an instance based on the class name and id.
-* `all` - Prints all string representation of all instances based or not on the class name. 
-* `update` - Updates an instance based on the class name and id by adding or updating attribute (save the change into the JSON file). 
+* `all` - Prints all string representation of all instances based or not on the class name.
+* `update` - Updates an instance based on the class name and id by adding or updating attribute (save the change into the JSON file).
 
 #### `models/` directory contains classes used for this project:
 [base_model.py](/models/base_model.py) - The BaseModel class from which future classes will be derived
@@ -70,7 +70,6 @@ TestBaseModelDocs class:
 * `def test_bm_module_docstring(self)` - Test for the base_model.py module docstring
 * `def test_bm_class_docstring(self)` - Test for the BaseModel class docstring
 * `def test_bm_func_docstrings(self)` - Test for the presence of docstrings in BaseModel methods
-
 TestBaseModel class:
 * `def test_is_base_model(self)` - Test that the instatiation of a BaseModel works
 * `def test_created_at_instantiation(self)` - Test created_at is a pub. instance attribute of type datetime
@@ -149,16 +148,68 @@ EOF  all  create  destroy  help  quit  show  update
 ** no instance found **
 (hbnb) quit
 ```
+## Web Dynamic - HTML/CSS/JavaScript
+
+JQuert version - `<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>`
+
+Install flasgger
+
+'''
+$ sudo apt-get install -y python3-lxml
+$ sudo pip3 install flask_cors # if it was not installed yet
+$ sudo pip3 install flasgger
+
+'''
+jsonschema exception
+
+'''
+$ sudo pip3 uninstall -y jsonschema 
+$ sudo pip3 install jsonschema==3.0.1
+
+'''
+
+pathlib2
+
+'''
+$ sudo pip3 install pathlib2
+
+'''
+
+Task1: attach cache_id to the render_template, using UUID(uuid.uuid4())
+
+'''
+guillaume@ubuntu:~/AirBnB_v4$ curl -s -XGET http://0.0.0.0:5000/0-hbnb/ | head -6
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../static/styles/4-common.css?f834413e-0aa9-4767-b64a-c92db9cb1f82" />
+    <link rel="stylesheet" type="text/css" href="../static/styles/3-header.css?f834413e-0aa9-4767-b64a-c92db9cb1f82" />
+
+'''
+
+Task2: adding clickavle checkboxes to amenities see file templates/1-hbnb.html
+
+Task3: update the API entry point
+
+Task4: instead of loading the place from back-end, now load from front-end
+
+Task5: the filter implemented, checking the amenities would get different searching results
+
+![alt text](https://github.com/JakeFC/AirBnB_clone_v4/blob/master/11111.jpg?raw=true)
 
 ## Bugs
-No known bugs at this time. 
+No known bugs at this time.
 
 ## Authors
-Alexa Orrico - [Github](https://github.com/alexaorrico) / [Twitter](https://twitter.com/alexa_orrico)  
-Jennifer Huang - [Github](https://github.com/jhuang10123) / [Twitter](https://twitter.com/earthtojhuang)  
-Jhoan Zamora - [Github](https://github.com/jzamora5) / [Twitter](https://twitter.com/JhoanZamora10)  
+Alexa Orrico - [Github](https://github.com/alexaorrico) / [Twitter](https://twitter.com/alexa_orrico)
+Jennifer Huang - [Github](https://github.com/jhuang10123) / [Twitter](https://twitter.com/earthtojhuang)
+Jhoan Zamora - [Github](https://github.com/jzamora5) / [Twitter](https://twitter.com/JhoanZamora10)
 David Ovalle - [Github](https://github.com/Nukemenonai) / [Twitter](https://twitter.com/disartDave)
-
+Jacob Calhoun - jacobchavera@yahoo.com
+simon Sun - sunmingyu.97@gmail.com
 Second part of Airbnb: Joann Vuong
 ## License
-Public Domain. No copy write protection. 
+Public Domain. No copy write protection.
+
+
