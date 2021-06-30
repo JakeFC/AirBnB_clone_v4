@@ -191,7 +191,7 @@ guillaume@ubuntu:~/AirBnB_v4$ curl -s -XGET http://0.0.0.0:5000/0-hbnb/ | head -
 
 ```
 
-Task2: adding clickavle checkboxes to amenities see file templates/1-hbnb.html
+Task2: adding clickable checkboxes to amenities see file templates/1-hbnb.html
 
 Task3: update the API entry point
 
