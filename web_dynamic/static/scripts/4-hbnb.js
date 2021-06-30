@@ -26,13 +26,14 @@ function getPlaces (amenities) {
     amenities = {};
   }
   $.ajax({
-    url: 'http://243b0609b929.7e5652f1.hbtn-cod.io:5001/api/v1/places_search',
+    url: 'http://0.0.0.0:5001/api/v1/places_search',
     data: JSON.stringify(amenities),
     method: 'POST',
     dataType: 'json',
     processData: false,
     contentType: 'application/json',
     success: function (places) {
+      $('.places').html('');
       for (const n in places) {
         const place = places[n];
         let article = `<article>\
@@ -63,8 +64,7 @@ $(document).ready(getPlaces());
 $('button').click(function () {
   const arr = [];
   for (const key in aDict) {
-    arr.push(aDict.key);
+    arr.push(aDict[key]);
   }
-  getPlaces({'amenities': arr});
-
+  getPlaces({ amenities: arr });
 });
