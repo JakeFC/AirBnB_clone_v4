@@ -199,7 +199,7 @@ Task4: instead of loading the place from back-end, now load from front-end
 
 Task5: the filter implemented, checking the amenities would get different searching results
 
-![alt text](https://github.com/JakeFC/AirBnB_clone_v4/blob/master/11111.jpg?raw=true)
+![alt text](https://github.com/JakeFC/AirBnB_clone_v4/blob/master/readme_used.jpg?raw=true)
 
 ## Bugs
 No known bugs at this time.
@@ -210,7 +210,7 @@ No known bugs at this time.
 * Jhoan Zamora - [Github](https://github.com/jzamora5) / [Twitter](https://twitter.com/JhoanZamora10)
 * David Ovalle - [Github](https://github.com/Nukemenonai) / [Twitter](https://twitter.com/disartDave)
 * Jacob Chavera - jacobchavera@yahoo.com
-* simon Sun - sunmingyu.97@gmail.com
+* Simon Sun - sunmingyu.97@gmail.com
 * Second part of Airbnb: Joann Vuong
 ## License
 Public Domain. No copy write protection.
