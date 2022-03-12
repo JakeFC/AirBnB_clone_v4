@@ -8,7 +8,7 @@ from sqlalchemy import Column, String, ForeignKey
 
 
 class Review(BaseModel, Base):
-    """Review class which takes info from SQL database if using db storage"""
+    """Review class which links info to a SQL database if using db storage"""
     if models.storage_t == 'db':
         __tablename__ = 'reviews'
         place_id = Column(String(60), ForeignKey('places.id'), nullable=False)
