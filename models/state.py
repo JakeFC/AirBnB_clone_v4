@@ -10,7 +10,8 @@ from sqlalchemy.orm import relationship
 
 
 class State(BaseModel, Base):
-    """Representation of state """
+    """State class which links info to a SQL database if using db storage
+    or is attributed a list of related cities from file storage if not"""
     if models.storage_t == "db":
         __tablename__ = 'states'
         name = Column(String(128), nullable=False)
