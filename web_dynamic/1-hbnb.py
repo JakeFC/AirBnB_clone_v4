@@ -21,9 +21,11 @@ def close_db(error):
 
 @app.route('/1-hbnb/', strict_slashes=False)
 def hbnb():
-    """ HBNB is alive! """
+    """ Sets a list variable to each data type and sorts the lists """
     states = storage.all(State).values()
     states = sorted(states, key=lambda k: k.name)
+
+    """ List of state, city tuples """
     st_ct = []
 
     for state in states:
