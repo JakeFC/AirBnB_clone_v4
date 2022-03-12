@@ -110,12 +110,15 @@ Task5: the filter implemented, checking the amenities would get different search
 No known bugs at this time.
 
 ## Authors
+#### Part 1
 * Alexa Orrico - [Github](https://github.com/alexaorrico) / [Twitter](https://twitter.com/alexa_orrico)
 * Jennifer Huang - [Github](https://github.com/jhuang10123) / [Twitter](https://twitter.com/earthtojhuang)
+#### Part 2
 * Jhoan Zamora - [Github](https://github.com/jzamora5) / [Twitter](https://twitter.com/JhoanZamora10)
+#### Part 3
 * David Ovalle - [Github](https://github.com/Nukemenonai) / [Twitter](https://twitter.com/disartDave)
+#### Part 4
 * Jacob Chavera - jacobchavera@yahoo.com
 * Simon Sun - sunmingyu.97@gmail.com
-* Second part of Airbnb: Joann Vuong
 ## License
 Public Domain. No copy write protection.
