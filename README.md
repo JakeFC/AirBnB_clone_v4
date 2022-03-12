@@ -1,7 +1,12 @@
 # AirBnB Clone - Web Dynamic
 
 #### What is this repository?
-This is 
+This is the fourth repo and seventh project finale in a journey to recreate an AirBnB website from file-storage console, to MySQL database, to local api,
+and finally to a dynamic html website hosted on a server.
+
+#### About Me
+I'm a Holberton School student interested in logical problem-solving and creating dynamic experiences. I really enjoyed the javascripting and data-parsing of this
+project as I watched it come alive. Check me out on [LinkedIn](https://www.linkedin.com/in/jacobfchavera/)
 
 ![alt text](https://github.com/JakeFC/AirBnB_clone_v4/blob/master/readme_used.jpg?raw=true)
 
@@ -71,8 +76,10 @@ $ HBNB_MYSQL_USER=hbnb_dev HBNB_MYSQL_PWD=hbnb_dev_pwd HBNB_MYSQL_HOST=localhost
 $ HBNB_MYSQL_USER=hbnb_dev HBNB_MYSQL_PWD=hbnb_dev_pwd HBNB_MYSQL_HOST=localhost HBNB_MYSQL_DB=hbnb_dev_db HBNB_TYPE_STORAGE=db python3 -m web_dynamic.4-hbnb
 ```
 
-#### Usage
+#### Usage (you do not need to download other repos)
+First, clone this repository.
 * Web application: After deployment and running both flask apps, visit address http://0.0.0.0:5000/4-hbnb/ to use web interface for filtering
+* Local api: see [AirBnB_clone_v3](https://github.com/JakeFC/AirBnB_clone_v3)
 * MySQL console application: see [AirBnB_clone_v2](https://github.com/JakeFC/AirBnB_clone_v2)
 * File-storage console application: see [AirBnB_clone](https://github.com/JakeFC/AirBnB_clone)
 
