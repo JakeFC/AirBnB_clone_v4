@@ -32,6 +32,7 @@ class BaseModel:
             for key, value in kwargs.items():
                 if key != "__class__":
                     setattr(self, key, value)
+            """Parse the created_at string if it exists, else set it to now"""
             if kwargs.get("created_at", None) and type(self.created_at) is str:
                 self.created_at = datetime.strptime(kwargs["created_at"], time)
             else:
@@ -43,6 +44,7 @@ class BaseModel:
             if kwargs.get("id", None) is None:
                 self.id = str(uuid.uuid4())
         else:
+            """Set default info if no arguments given"""
             self.id = str(uuid.uuid4())
             self.created_at = datetime.utcnow()
             self.updated_at = self.created_at
@@ -68,6 +70,7 @@ class BaseModel:
         new_dict["__class__"] = self.__class__.__name__
         if "_sa_instance_state" in new_dict:
             del new_dict["_sa_instance_state"]
+        """If not using file storage and password is a key, delete it"""
         if save_fs is None:
             if "password" in new_dict:
                 del new_dict["password"]
