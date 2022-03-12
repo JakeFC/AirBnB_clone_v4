@@ -20,7 +20,8 @@ if models.storage_t == 'db':
 
 
 class Place(BaseModel, Base):
-    """Representation of Place """
+    """Review class which links info to a SQL database if using db storage and
+    is attributed a list of both related reviews and amenities either way"""
     if models.storage_t == 'db':
         __tablename__ = 'places'
         city_id = Column(String(60), ForeignKey('cities.id'), nullable=False)
